@@ -1,5 +1,6 @@
 package ru.skillbox.diplom.group35.microservice.notification.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +15,7 @@ import java.time.ZonedDateTime;
 
 @Getter
 @Setter
+@Schema(description = "Dto события")
 public class NotificationsDto {
 
     public NotificationsDto() {
@@ -25,7 +27,10 @@ public class NotificationsDto {
         this.data = data;
     }
 
+    @Schema(description = "Врямя отправки события")
     private ZonedDateTime timeStamp; // $date-time
+
+    @Schema(description = "Dto события доп.")
     private NotificationDto data;
 
 }
