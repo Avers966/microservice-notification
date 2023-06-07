@@ -7,5 +7,7 @@
 
     <include file="v0.1_01_initial_schema.xml" relativeToChangelogFile="true"/>
     <include file="v0.1_02_add_column.xml" relativeToChangelogFile="true"/>
+    <!--  comment  -->
+    <include file="v0.1_03_add_tables_aud.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

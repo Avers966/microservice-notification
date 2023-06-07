@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
+import org.hibernate.envers.Audited;
 import ru.skillbox.diplom.group35.library.core.model.base.BaseEntity;
 
 import javax.persistence.Column;
@@ -19,6 +20,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Entity
+@Audited
 @Table(name = "notification_setting")
 public class NotificationSetting extends BaseEntity {
 
