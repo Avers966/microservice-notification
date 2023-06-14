@@ -16,7 +16,7 @@ spring:
 
   liquibase:
     enabled: true
-    drop-first: true
+    drop-first: false
     default-schema: notification
     liquibase-schema: notification
 
@@ -29,7 +29,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto:  update # update , create , create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL10Dialect
@@ -39,7 +39,7 @@ spring:
 
   kafka:
     consumer:
-      group-id: event.1
+      group-id: event.2
     bootstrap-servers: 82.202.214.42:9094
 
   autoconfigure:
